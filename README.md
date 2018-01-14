@@ -26,3 +26,13 @@ This thing literally does nothing right now. Come back later and maybe I'll have
 ## Typical topology
 
 I'm planning to make this very agnostic of topology, but my vision for a typical use-case would be a single globally accessible gateway in the cloud, and one on more installed behind firewalls, each configured to provide access to applications that run in those locations.
+
+## Development
+
+```bash
+# Build:
+sbt docker:publishLocal
+
+# Run:
+docker run -p 8080:8080 --rm iriguchi:0.0.1-SNAPSHOT
+```
